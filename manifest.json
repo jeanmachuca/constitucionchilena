@@ -1,10 +1,10 @@
 {
-  "name": "QCObjects New App",
-  "short_name": "qcobjects_newapp",
+  "name": "Constitucion Chilena",
+  "short_name": "constitucion_chilena",
   "theme_color": "rgb(1,1,1)",
   "background_color": "rgb(1,1,1)",
   "display": "standalone",
-  "description": "Awesome application that will help you achieve your dreams.",
+  "description": "Descarga el Texto Refundido de Constitución Política de la República de Chile",
   "orientation": "portrait-primary",
   "lang": "en-US",
   "dir": "auto",
