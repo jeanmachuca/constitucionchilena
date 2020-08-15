@@ -1,0 +1,67 @@
+button > .text {
+  color: #fff;
+  font: 16px;
+  line-height: 70px;
+  text-align: center;
+  letter-spacing: .16em;
+  position: absolute;
+  width: auto;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 60px;
+  margin: 0 auto;
+  margin-top: -10%;
+  cursor: pointer;
+}
+
+.color-change-5x {
+	-webkit-animation: color-change-5x 8s linear infinite alternate both;
+	        animation: color-change-5x 8s linear infinite alternate both;
+  background-blend-mode: difference;
+}
+
+/**
+ * ----------------------------------------
+ * animation color-change-5x
+ * ----------------------------------------
+ */
+@-webkit-keyframes color-change-5x {
+  0% {
+    background-color: white;
+  }
+  25% {
+    background-color: whitesmoke;
+  }
+  50% {
+    background-color: white;
+  }
+  75% {
+    background-color: grey;
+  }
+  100% {
+    background-color: whitesmoke;
+  }
+}
+@keyframes color-change-5x {
+  0% {
+    background-color: grey;
+  }
+  25% {
+    background-color: whitesmoke;
+  }
+  50% {
+    background-color: white;
+  }
+  75% {
+    background-color: whitesmoke;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+button > .text p {
+  transform:none;
+  padding:0;
+  margin:0;
+}

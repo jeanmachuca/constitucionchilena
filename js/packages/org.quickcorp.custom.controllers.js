@@ -109,10 +109,15 @@ Package('org.quickcorp.custom.controllers',[
 		   analytics.page();
 		 }}();
 			// end segment stats
-
-			this.component.body.subelements('button[name=download]')[0].addEventListener('click',function (event){
-				location.href="https://www.leychile.cl/Consulta/Exportar?radioExportar=Normas&exportar_formato=pdf&nombrearchivo=DTO-100_22-SEP-2005&exportar_con_notas_bcn=True&exportar_con_notas_originales=True&exportar_con_notas_al_pie=True&hddResultadoExportar=242302.2019-12-24.0.0%23";
-			});
+			var component = this.component;
+			var _componentRoot = (component.shadowed)?(component.shadowRoot):(component.body);
+			_componentRoot.subelements('button[name=download]').map(
+					function (element){
+						element.addEventListener('click',function (event){
+							location.href="https://www.leychile.cl/Consulta/Exportar?radioExportar=Normas&exportar_formato=pdf&nombrearchivo=DTO-100_22-SEP-2005&exportar_con_notas_bcn=True&exportar_con_notas_originales=True&exportar_con_notas_al_pie=True&hddResultadoExportar=242302.2019-12-24.0.0%23";
+						});
+					}
+			)
 		}
 	}),
   Class('Controller1',Controller,{
