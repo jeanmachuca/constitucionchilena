@@ -3,7 +3,7 @@ div.container {
   grid-template-areas: "hero";
   place-items: center;
   height: 60vh;
-  max-height: 600px;
+  min-height: 600px;
   background-color: red;
   overflow: hidden;
   margin: -30px;
