@@ -1,0 +1,62 @@
+<style>
+  /*
+  * Main Layout Styles
+  */
+  @import url('https://sdk.qcobjects.dev/css/basic-layout.css');
+  @import url('css/index.css');
+
+  /* uncomment the next line to apply a theme */
+  /* @import url('css/theme/cyan/style.css'); */
+</style>
+
+<header>
+  <component name="header" controllerClass="HeaderController">
+    <routing path="#signup" name="blank"></routing>
+    <routing path="#signin" name="blank"></routing>
+    <routing path="#page1" name="blank"></routing>
+    <routing path="#page2" name="blank"></routing>
+    <routing path="#page3" name="header"></routing>
+    <routing path="#" name="header"></routing>
+    <routing path="" name="header"></routing>
+</component>
+</header>
+<aside>
+  <nav>
+    <span class="topnav">
+      <component name="login">
+          <routing path="#page1" name="blank"></routing>
+          <routing path="#page2" name="blank"></routing>
+          <routing path="#page3" name="blank"></routing>
+          <routing path="#signup" name="blank"></routing>
+          <routing path="#signin" name="blank"></routing>
+          <routing path="#" name="login"></routing>
+          <routing path="" name="login"></routing>
+      </component>
+    </span>
+    <button  aria-label="nav button" role="button" tabindex="-1" class="navbtn" onclick="global.sideNavController.toggle()"></button>
+    <component name="nav" controllerClass="SideNavController"></component>
+  </nav>
+</aside>
+<main role="main">
+  <section>
+    <component name="contentblock">
+        <routing path="#page1" name="pages/page1"></routing>
+        <routing path="#page2" name="pages/page2"></routing>
+        <routing path="#page3" name="pages/page3"></routing>
+        <routing path="#signup" name="signup"></routing>
+        <routing path="#signin" name="login2"></routing>
+        <routing path="#" name="contentblock"></routing>
+        <routing path="" name="contentblock"></routing>
+      </component>
+  </section>
+</main>
+<footer>
+  <component name="footer">
+      <routing path="#signup" name="signupbuttons"></routing>
+      <routing path="#page1" name="footer2"></routing>
+      <routing path="#page2" name="footer2"></routing>
+      <routing path="#page3" name="footer"></routing>
+      <routing path="#" name="footer"></routing>
+      <routing path="" name="footer"></routing>
+  </component>
+</footer>
